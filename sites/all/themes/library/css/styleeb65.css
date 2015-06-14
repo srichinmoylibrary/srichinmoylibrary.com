@@ -1,0 +1,396 @@
+/**************************
+ *        GLOBALS         *
+ **************************/
+
+html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+body, input, select { font-family: Georgia, serif; font-size: 15px; font-size: 1.5rem; color: #555; background: url(http://www.srichinmoylibrary.com/sites/all/themes/library/images/bodybg.png); } 
+
+h1, h2, h3, h4, h5, h6 { font-style: italic; font-weight: normal; line-height: 1.15; color: #999; }
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.4em; margin-top: 1.5em; margin-bottom: .5em; }
+h3, h4, h5, h6 { font-size: 1.2em; margin-top: 1.5em; margin-bottom: .5em; }
+.book-top-level h1 { text-align: center; }
+.book-top-level #header h1 { text-align: left; }
+
+/* a, .quote-citation { color: #2419B2; text-decoration: none; cursor: pointer; } */
+a, .quote-citation, .block-facetapi h2.block-title { color: #5e87ad; text-decoration: none; cursor: pointer; }
+a.small-link { font-size: .85em; }
+
+hr { border: none; height: 11px; background: url(http://www.srichinmoylibrary.com/sites/all/themes/library/images/text-break.png) bottom center no-repeat; background-size: 100% auto; margin-bottom: 1.5em; }
+
+#wrapper { width: 92%; padding: 0 4%; margin: 0 auto; max-width: 550px; }
+
+
+/**************************
+ *         HEADER         *
+ **************************/
+
+body.genre-poem #header, body.book-top-level #header { margin-bottom: 50px; }
+
+#header h1 { float: left; width: 40%; max-width: 199px; margin-top: 20px; }
+.region-header { float: right; width: 45%; min-width: 200px; margin-top: 28px;  }
+
+
+
+#edit-actions { position: relative; }
+
+#search-block-form { /*display: inline-block; width: auto;*/width: 100%; }
+#search-block-form input[type=text] {  border: none; background: #e6e6e6; border-radius: 4px; padding: 5px 3% 4px 3%; font-size: 1.2em; line-height: 1px; float: left; margin-right: 3%; width: 62%; color: #888; }
+#search-block-form input[type=submit], a.button { border: 1px #dedede solid; padding: 4px 3%; float: left; width: 27%; border-radius: 4px; background: #FEFCF0; color: #999;  }
+
+/**************************
+ *       NAVIGATION       *
+ **************************/
+.admin-menu #overlay-container {
+  margin-top: 20px; /* Fix for using admin_menu with the overlay. */
+}
+.breadcrumb { color: #888; font-size: .85em; }
+
+/**************************
+ *        FRONT       *
+ **************************/
+
+#front-top-section { margin-bottom: 30px; } 
+#front-top-section p { line-height: 1.5em; margin: 0 0 1em 0; }
+#front-top-section ul { list-style: disc inside; font-size: .9em; padding-left: 0; }
+#front-top-section img { padding: 3px; border: 1px #dedede solid; }
+
+#opening-paragraph { padding: 20px 0 0 0; }
+#opening-paragraph p { padding-top: 20px; font-size: 1em; }
+a.list-all-books { width: auto; margin: 20px 0 0 0; font-size: 1.2em; }
+
+.front-image-wrap { margin: -20px 0 0 10%; float: right; max-width: 40%; -webkit-margin: 0 !important;}
+.front-image-wrap figcaption { font-size: .8em; text-align: right; }
+
+.front-cover-link { font-size: .8em; display: block; width: 100%; margin-top: 45px; padding-left: 10px; text-align: right; }
+
+.front-alphabetical { font-size: .9em;  color: #dedede; margin: 7px 0 0 0; padding: 8px 0; border-top: 1px #dedede solid; border-bottom: 1px #dedede solid; line-height: 1.6; text-align: center; }
+
+#front-top-section .front-singlelisting ul { list-style: disc outside; margin-left: 0; padding: .5em 0 1em 0;  border-bottom: 1px #dedede solid; }
+/* #front-books-listing ul { line-height: 1.4em; margin-bottom: .4em; float: left; min-width: 22%; padding-right: 5%; } 
+#front-books-listing ul li { list-style: none; display: inline-block; margin: 0  0 1em; } */
+
+/* #category-finder { margin: 0 0 0 -5px; }
+#category-finder ul { line-height: 1.4em; margin-bottom: .4em; } 
+#category-finder ul li { margin: 0 1em 0 0; float: left; color: #999;} 
+#category-finder ul li.genre-head { list-style: none; font-style: italic; color: #555; } */
+
+.frontspan-list { margin: 10px 0 30px -5px; font-style: italic; font-size: .95em; }
+.frontspan-list a { font-style: normal; padding: 0 5px; }
+
+
+#front-stopper { width: 100%; }
+
+#quote-display { margin: 70px 0 20px 0; position: relative; }
+#quote-display h3 { width: 26%; margin-right: 7%; margin-top: 1em; float: left; color: #1cc31c; }
+#quote-display .quote-body { font-size: 1.3em; }
+#quote-display .view { width: 67%; float: left; }
+#quote-display .view .quote-body { margin-top: 1em; display: inline-block; }
+#quote-display .view .quote-author { font-size: .65em; text-align: right; margin-right: -20px; }
+#quote-display .view .quote-author sup { margin-top: -4px; }
+#quote-display .view .quote-book { margin-top: 25px; line-height: 1.3; }
+#quote-display .view .quote-more { position: absolute; top: 50px; left: 0; width: 24%; color: #777; }
+#quote-display .view ul.pager { position: absolute; top: 85px; left: 0; font-size: .9em; width: 24%; }
+#quote-display .view ul.pager li { float: left; margin: 0; padding: 0; }
+#quote-display .view ul.pager .pager-current { display: none; }
+#quote-display .view ul.pager li.pager-next { float: right; }
+
+#quote-display .view-display-id-frontaphorismcard { float: right; margin-top: 40px; }
+#quote-display .view-display-id-frontaphorismcard img { margin-bottom: 10px; }
+#quote-display .view-display-id-frontaphorismcard .quote-more { bottom: 30px; top: auto; }
+#quote-display .view-display-id-frontaphorismcard  ul.pager { bottom: 5px; top: auto; }
+
+#quote-display .view-quote-topic-listing { margin-top: 55px; width: 64%; margin-left: 36%; font-size: .95em; }
+#quote-display .view-quote-topic-listing ul { list-style: disc outside; margin: 0; padding: 0; }
+#quote-display .view-quote-topic-listing ul li { width: 40%; margin: 0 10% 3px 0; padding: 0; float: left; disply: block; }
+#quote-display .view-quote-topic-listing ul li.views-row-even { margin-right: 0; }
+
+#quote-buttons { margin: 40px 0 30px 33%; text-align: center;}
+#quote-buttons a.button { width: auto; display: block; float: none; display: inline-block; font-size: 1.2em; margin-bottom: 5px;}
+
+#latest-books { margin-bottom: 0; }
+#latest-books h3 { width: 24%; margin-right: 9%; margin-top: 1em; float: left; color: #47aaef; }
+#latest-books ul { /* list-style: none; */ width: 67%; float: left; margin-bottom: 1em; }
+
+#latest-updates { position: relative; margin: 0 0 30px 0; padding-top: 25px;  }
+#latest-updates h3 { width: 24%; margin-right: 9%; margin-top: 0; float: left; color: #f5b70c; }
+#latest-updates .view { width: 67%; float: left; }
+#latest-updates .view-content ul { margin-left: 0; padding-left: 0; }
+#latest-updates .view h2 { font-size: 1.1em; margin-top: 0; font-style: normal; font-weight: bold; }
+#latest-updates .view .news-date { position: absolute; top: 50px; left: 0; font-size: .8em; width: 24%; color: #777; }
+#latest-updates .view ul.pager { position: absolute; top: 80px; left: 0; font-size: .9em; width: 24%; }
+#latest-updates .view ul.pager li { float: left; margin: 0; padding: 0; }
+#latest-updates .view ul.pager .pager-current { display: none; }
+#latest-updates .view ul.pager li.pager-next { float: right; }
+
+/*************************
+*     QUOTES             *
+**************************/
+
+.quote-book { font-size: .8em; border: 1px #dedede solid; padding: 7px 3%; background: #FEFCF0; color: #999; display: none; border-radius: 5px; margin-bottom: 10px; }
+.quote-more { font-size: .8em; color: #777; width: 100%; text-align: right; }
+.quote-image-book { font-size: .8em; }
+.quote-image-book a { display: block; }
+
+#taxonomy-page .views-row, .quote-page-row { padding: 40px 30px 30px 20px; background: url(http://www.srichinmoylibrary.com/sites/all/themes/library/images/text-break.png) bottom center no-repeat; background-size: 100% auto; }
+#taxonomy-page .item-list .pager, .view-quote-listing.view-display-id-page .item-list .pager { border: 1px #dedede solid; padding: 15px 0; border-radius: 7px; margin-top: 20px;  }
+.view-quote-listing.view-display-id-page img { margin: 0 auto 55px; max-width: 100%; height: auto; display: block;}
+.view-quote-listing.view-display-id-page .quote-image-book { width: 75%; float: left; margin-top: -20px; }
+.view-quote-listing.view-display-id-page .quote-more { width: 25%; float: right; margin-top: -10px;}
+
+
+/**************************
+ *         CONTENT        *
+ **************************/
+ 
+.field-name-body { min-height: 60px; }
+.book-top-level .field-name-body  { min-height: 0; }
+
+.node-type-book article { margin-top: 30px; }
+
+.node-type-page h1 { text-align: center; margin-bottom: 1em; }
+ 
+.node-type-book h1, .view-book-infinite-scroll h2 { font-size: 1.15em; line-height: 1.3em; display: inline-block; width: auto; margin-right: 5px; }
+.node-type-book h2, .view-book-infinite-scroll h3 { font-size: .95em; line-height: 1.5em; margin: -1em 0 1.5em 0;}
+.view-book-infinite-scroll h3 { margin-top: -.7em; }
+
+.genre-section h1 { font-size: 1.5em; }
+.genre-section h2 { font-size: 1.15em; margin: .5em 0; }
+
+.book-top-level h1 { font-size: 1.7em; display: block; }
+
+.book-top-level img.book-cover { max-width: 30% !important; float: right; margin-left: 30px; margin-bottom: 25px; }
+
+.front .articlebody h2,  .front .articlebody h3 { text-align: center; }
+.front .articlebody img { margin-top: 5px; }
+ 
+.region-content p, .region-content blockquote { line-height: 1.8em; margin: 0 0 1.5em 0; }
+.region-content ul { margin-bottom: 1.5em; }
+.region-content ul li { line-height: 1.4em; margin-bottom: .4em; }
+.region-content img { max-width: 99%; height: auto; padding: 3px; border: 1px #dedede solid; }
+
+/* Float and clearing classes */
+img.left { float: left; margin: 10px 6% 5px 0; max-width: 40%; height: auto; }
+img.right { float: right; margin: 10px 0 5px 6%; max-width: 40%; height: auto; }
+img.centre { display: block; margin: 0 auto; }
+.clear { clear: both; }
+
+span.indent { padding-left: 1em; }
+
+.ajax-progress-throbber { display: none; }
+
+.book-author { text-align: center; font-size: 1.1em; }
+.book-description { text-align: center; font-size: .85em; color: #888; margin: 20px 0; line-height: 1.4; }
+.book-excerpt { text-align: center; font-size: .8em; margin: 70px 0 25px 0; color: #777; line-height: 1.3em; }
+.page-links { font-size: .9em; position: relative; }
+.page-links a { text-decoration: none; }
+
+
+.book-navigation { margin-top: 50px; }
+.book-navigation .menu {  border-color: #dedede; }
+.book-navigation .page-previous, .book-navigation .page-next { width: 47%; }
+.book-navigation .page-links { border-color: #dedede; padding: 10px 0; }
+.icons { width: 12%; min-width: 36px; }
+
+#below-book-navigation { margin: 30px 0 10px 0; border: 1px #dedede solid; padding: 20px 20px 15px 20px; border-radius: 7px; color: #777; }
+#below-book-navigation ul { padding-left: 1em; margin-top: 0; list-style: circle; }
+#below-book-navigation img { padding: 0 0 5px 0; }
+#below-book-navigation-left { float: left; width: 50%; margin-right: 5%; font-size: .85em; }
+#below-book-navigation-left ul { margin-bottom: 0; }
+#below-book-navigation-right { float: left; width: 45%; font-size: .8em; text-align: right; }
+
+#page-cc-credit { margin: 40px 0 10px 0; border: 1px #dedede solid; padding: 13px 20px; border-radius: 7px; color: #777; font-size: .83em; line-height: 1.4em; }
+
+#biblio-source, #permalink-source { padding: 5%; width: 90%; height: 90%; font-size: 1.2em; display: none; } 
+#permalink-explanation { font-size: .85em; margin-top: 15px; }
+
+.fancybox-overlay { background-image: url(http://www.srichinmoylibrary.com/sites/all/themes/library/images/swatches/white-70.png); }
+.fancybox-inner {  border: 1px #dedede solid; background: #FEFCF0; }  
+
+#copy-notice { border: 1px #dedede solid; background: #FEFCF0; padding: 0 20px; border-radius: 5px; display: none; position: fixed; bottom: 30px; right: 30px; width: 80%; max-width: 220px; font-size: .83em; line-height: 1.2; }
+
+#copy-notice-close { color: red; text-align: right; margin-bottom: 20px; cursor: pointer;  }
+
+.citekey-display { font-variant: small-caps; display: inline-block; }
+
+
+/* Forms */
+
+.region-content input[type=text], .region-content input[type=email], .region-content input[type=password] { background: #fff; padding: 4px 7px; font-size: 1.3em; border: 1px #dedede solid; border-radius: 3px; max-width: 100% !important; }
+.region-content input[type=submit] { border: 1px #dedede solid; padding: 5px 15px; border-radius: 4px; background: #FEFCF0; color: #444; font-size: 1.5em; box-shadow: 2px 2px 2px #999; }
+
+.node label { font-weight: normal; font-size: 1.1em; color: #777; margin-bottom: 3px;  }
+
+
+/* Footnotes */
+.footnotes { font-size: .8em; margin-top: 50px; }
+.footnotes hr { background-image: none; margin: 0; }
+.footnotes ol { padding-left: 1em; margin: 0; }
+.footnotes p { line-height: 1.3; margin-bottom: .5em; }
+
+
+/**************************
+ *         FOOTER         *
+ **************************/
+ 
+ #block-menu-menu-footer { font-size: .8em; width: 100%; text-align: center; }
+ #block-menu-menu-footer ul.menu { list-style: none; padding-left: 0; margin-top: 0; width: auto; display: inline-block; color: #999; }
+ #block-menu-menu-footer ul.menu li { list-style: none; float: left; margin: 0; padding: 0; }
+ #block-menu-menu-footer ul.menu li:after { content: '•'; }
+ #block-menu-menu-footer ul.menu li.last:after { content: ''; }
+ #block-menu-menu-footer ul.menu li a { padding: 0 15px; }
+ 
+/************************
+ *       VIEWS          *
+ ************************/
+  
+.attachment .view-book-list-alphabetical, .attachment .view-songbook-list-alphabetical, .attachment .view-book-covers-alphabetical,
+.view-header .view-book-list-alphabetical, .view-header .view-songbook-list-alphabetical, .view-header .view-book-covers-alphabetical {
+   font-size: .8em;
+   border-top: 1px #dedede solid;   
+   border-bottom: 1px #dedede solid; 
+   padding: 10px;
+   margin-bottom: 20px;
+   color: #999;
+}   
+
+.attachment .view-book-list-alphabetical span.views-summary a,
+.attachment .view-songbook-list-alphabetical span.views-summary a,
+.attachment .view-book-covers-alphabetical span.views-summary a,
+.view-header .view-book-list-alphabetical span.views-summary a,
+.view-header .view-songbook-list-alphabetical span.views-summary a,
+.view-header .view-book-covers-list-alphabetical span.views-summary a {
+   font-size: 1.3em;   
+}  
+
+body.page-books ul, body.page-songbooks ul { margin-top: 35px; color: #999; }
+body.page-books ul li, body.page-songbooks ul li { margin-bottom: 10px; font-size: .97em; }  
+
+body.page-scrolling h1#page-title { text-align: center; margin-bottom: 40px; }
+.view-book-infinite-scroll .views-row { margin-bottom: 50px; background: url(http://www.srichinmoylibrary.com/sites/all/themes/library/images/text-break.png) bottom center no-repeat; background-size: 100% auto; padding-bottom: 50px; } 
+.view-book-infinite-scroll .views-row h2 { font-size: 1.15em; line-height: 1.3em; }
+.view-book-infinite-scroll .field-name-body { min-height: 0; }
+
+.view-display-id-coverview .pager { margin-top: 20px; }
+.viewswitcher { text-align: right; }
+
+
+
+/******************
+ * SEARCH         *
+ ******************/
+ 
+.region-content #search-form input[type="submit"] { font-size: 1em; margin-top: -3px; }
+
+ol.search-results {
+    padding-left: 0;   
+}    
+ol.search-results li {
+
+    border-top: 1px #dedede solid;
+}
+ol.search-results li h3.title { font-size: 1.1em; margin-bottom: 5px; line-height: 1.4em; }
+ol.search-results li h3.title a { text-decoration: none; }
+
+ol.search-results .search-snippet-info {
+  padding-left: 0;
+}
+
+p.spelling-suggestions { margin-top: -10px; margin-bottom: .65em; }
+
+.block-facetapi h2.block-title { font-size: 1em; margin-top: -10px; font-style: normal; }
+.block-facetapi .item-list { display: none; }
+p.helptext { font-size: .83em; line-height: 1.3em; display: none; }
+
+ul.facetapi-facetapi-checkbox-links:before,
+ul.facetapi-facetapi-checkbox-links:after {
+    content:"";
+    display:table;
+}
+ul.facetapi-facetapi-checkbox-links:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+ul.facetapi-facetapi-checkbox-links {
+    zoom:1;
+    margin-bottom: .5em;
+}
+ul.facetapi-facetapi-checkbox-links li.leaf { list-style: none; float: left; }
+
+
+.search-tips { font-size: .9em; line-height: 1.3em; display: none; }
+
+.page-search .item-list .pager { border: 1px #dedede solid; padding: 15px 0; border-radius: 7px; margin-top: 20px;  }
+
+.page-search .item-list .pager li {
+    margin-left: 0; padding: 0.3em; 
+}
+
+/***************
+ *  EDITING    *
+ ***************/
+ul#domain-admin-menu { position: fixed; }
+#l10n-client { display: none; }
+body.tab-toolbar.domain-admin-menu.l10n-client #l10n-client { display: block; top: 37px !important; } 
+body.tab-toolbar.domain-admin-menu-combined.l10n-client #l10n-client { display: block; top: 56px !important; } 
+
+/***************
+ *  MEDIA       *
+ ***************/
+ 
+@media only screen and (max-width: 550px)  {
+  #header h1 { margin: 5px 0; }
+  .region-header { margin: 12px 0 20px 0;  }
+
+    #latest-updates .view .news-date, #quote-display .view .quote-more { top: 75px; }
+    #latest-updates .view ul.pager, #quote-display .view ul.pager { top: 110px; }
+    
+    .page-search .pager-ellipsis, .page-search .pager-item { display: none; }
+
+    #quote-display .view .quote-more, #quote-display .view-display-id-frontaphorismcard .quote-more { display: none; }
+  
+      #opening-paragraph p  { padding-top: 0;  }
+      .front-image-wrap { margin-top: 0px; }
+
+  .front-alphabetical .views-summary { display: inline-block; margin-bottom: 5px; }
+  .front-alphabetical .views-summary a { padding: 10px; }
+  .view-book-list-alphabetical .views-summary { display: inline-block; margin-bottom: 10px; }
+
+  .frontspan-list { line-height: 1.7; }
+  .frontspan-list span { display: block; }
+}   
+ 
+@media only screen and (max-width: 450px)  {
+ 
+   #header h1 { display: block; width: 199px;  }
+  .region-header { float: none; width: 100%; margin: 5px auto 20px; display: inline-block;  } 
+
+  #opening-paragraph p  { font-size: .9em; }
+  .front-image-wrap { margin-left: 5%; }
+  a.list-all-books {  margin: 5px 0 40px 0; font-size: 1em; }
+  
+  #quote-display .quote-body { font-size: 1.15em; }
+  #quote-display h3, #quote-display .view { width: 100%; float: none; }
+   #quote-buttons { margin-left: 0;}
+
+  .node-type-page h1 { margin-bottom: .5em; }
+  body.book-top-level #header, body.node-type-page #header { margin-bottom: 0; }
+
+   #quote-display .view ul.pager { position: static; width: auto; }
+ 
+} 
+
+@media only screen and (max-height: 550px)  {   
+    
+    body.genre-poem #header { margin-bottom: 20px; }
+    p.book-excerpt { margin-bottom: 10px; }
+ } 
+
+
+
+    
+/******************/
+/* Emergency fixes */
+/*******************/
+
+#memcache-devel { display: none; }    
